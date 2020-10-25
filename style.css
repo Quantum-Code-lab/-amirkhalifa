@@ -1,0 +1,259 @@
+@font-face
+	{
+	  src: url(assets/font/Lato-Regular.ttf);
+	  font-family: "Lato";
+	}
+@font-face
+	{
+	  src: url(assets/font/Bronova_Regular.otf);
+	  font-family: "Bronova";
+	}
+html{scroll-behavior: smooth;}
+*{margin: 0;padding: 0; outline: 0;}
+body
+{
+    width: 100%;
+    height: auto;
+}
+.header
+{
+    width: 100%;
+    height:5rem;
+    background: #0b237785;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+/* .navbar (for defult navbar)
+{
+width: 100%;
+height: 5rem;
+background: #0b237785;
+position: fixed;
+z-index: 1;
+top: 0;
+
+}
+.navbar ul
+{
+    float: right;
+    list-style: none;
+    width: 53%;
+    height: 9vh;
+    flex-flow: wrap row;
+    padding-top: 14px;
+    margin-top: 17px;
+}
+.navbar ul li
+{
+    float: left;
+    text-align: center;
+    margin-left: 3rem;
+    flex-flow: wrap row;
+    
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: "Lato";
+} */
+
+/* hovr nav bar start */
+.hovr
+{
+    width: 60%;
+    height: 5rem;
+    align-items: center;
+    float: right;
+    background: transparent;
+    display: flex;
+}
+button
+{
+    
+}
+.btn,.btn1,.btn2,.btn3,.btn4
+{
+    text-transform: uppercase;
+    width: 120px;
+    height: 35px;
+    border: 3px solid #ffffff;
+    background: #73515100;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    place-items: center;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    margin-left: 38px;
+}
+.btn::before,.btn::after,.btn1::before,.btn1::after,.btn2::before,.btn2::after,.btn3::before,.btn3::after,.btn4::before,.btn4::after
+{
+    content: "";
+    width: 20px;
+    height: 4px;
+    background: #050a0a;
+    position: absolute;
+    transition: .4s linear;
+    transform: skewX(50deg);
+}
+.btn::before,.btn1::before,.btn2::before,.btn3::before,.btn4::before
+{
+    top: -4px;
+    left: 10%;
+}
+.btn::after,.btn1::after,.btn2::after,.btn3::after,.btn4::after
+{
+    bottom: -4px;
+    right: 10%;
+}
+.btn:hover::before, .btn1:hover::before, .btn2:hover::before, .btn3:hover::before, .btn4:hover::before
+{
+    left: 70%;
+}
+.btn:hover::after, .btn1:hover::after, .btn2:hover::after, .btn3:hover::after, .btn4:hover::after
+{
+    right: 70%;
+}/* hovr nav bar end */
+.container
+{
+    width: 100%;
+    overflow: hidden;
+    /* overflow-y: scroll;
+    scroll-behavior: smooth; */
+}
+#home
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  */
+    align-items: center;
+    background-image: url(media/resize-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+}
+ #home h1
+{
+    font-size: 3rem;
+    margin-top: 98px;
+    color: #235f84;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    
+}
+#home p
+{
+    font-size: 1.5rem;
+    width: 37rem;
+    color: #235f84;
+    border: 1px solid #317598;
+}  
+/*
+#about#contact, #services, #gallery
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(media/unssplash.jpg);
+    text-align: center;
+
+} */
+
+/* just one class call for all different page about-gallery */
+
+.all 
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+/* justify-content: center;  */
+    align-items: center;
+    text-align: start;
+
+}
+.templet{ overflow: hidden;}
+
+#about h1,#contact h1, #services h1, #gallery h1
+{
+    font-size: 3rem;
+    margin-top: 98px;
+    color: #dcdde1;
+    letter-spacing: 1.2rem;
+
+}
+#about p, #contact p, #services p, #gallery p
+{
+    font-size: 1.5rem;
+    width: 37rem;
+    color: #dcdde1;
+    margin-top: 10px;
+}
+#about
+{
+    background-image: url(media/resize-brett.jpg);
+    background-repeat: no-repeat;
+}
+#gallery
+{
+    background-image: url(media/re-unsplash.jpg);
+    background-repeat: no-repeat;
+}
+#services
+{
+    background-image: url(media/re-fauxels.jpg);
+    background-repeat: no-repeat;
+}
+
+#contact
+{
+    background-image: url(media/resize789.jpg);
+    background-repeat: no-repeat;
+}
+/* hover menu test*/
+/* .hovr-test
+{
+    width: 100%;
+    height: 9vh;
+    background: #fff;
+}
+.hovr-test ul
+{
+    width: 50%;
+    float: right;
+    list-style: none;
+    height: 8vh;
+    background: #698a93;
+
+}
+a::before,a::after,span::before,span::after
+{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #fff;
+} */
+.footer
+{
+    height: 5rem;
+    width: 100%;
+    background: #091930;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    flex-direction: column;
+
+}
